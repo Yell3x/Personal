@@ -1,0 +1,32 @@
+Although it may not relate to the problem you've sent me, it is important to know for the exams and computer science in general.
+
+Using an ASCII table to compare Arrays [An array is a variable that has square brackets on the side of it, you've defiantly seen it before. In summary, it puts all the values stored in each variable right next to each other in memory so that it is easy to find and access, it's one of the best ways to make your code have better style and more robust.]
+
+/* example:
+        instead of doing:                               You'd do:                           Or in short:
+                                      breakdown:  [Datatype] [name][(size of array)]
+        int x = 1                                       int x[3];                           int x[] = {1, 2, 3}
+        int y = 2                                                                       when the square brackets are empty it means "the whole size of the array"
+        int z = 3                                       int x[0] = 1;                   here it automatically knows what size it is as you include 3 variables
+                                                        int x[1] = 2;                   so it will make the size 3
+                                                        int x[2] = 3;
+
+
+// The reason i am saying this here is because one of the biggest things that we didn't get taught in computer science with mr norman is this, A string is an array.
+//  In other programming languages there is actually no such thing as a data type called string, because what it actually is, is a group of individual characters.
+//  character (char) is the actual data type a string is made out of, and the even cooler thing, well at least for me, is that a character as you could've guessed is actually an int. If you don't know what i mean, look up an ASCII chart. That is what i am referring to and use when going through 'strings'.
+
+    example:
+    Print("hi!") -----> string[0] = 'h', string[1] = 'i', string[2] = '!' -------> string[0] = 104 (104 is character h in ASCII), string[1] = 105, string[2] = 33
+in reality it actually is:
+    print(string[0], string[1], string[2])
+
+    so you could see the string basically as a line of numbers that each individually represent each character with its ASCII digit value.
+    what i could do for example is do:
+    h - 1
+
+    The reason why i can do this is because in reality i am doing:
+
+    104 - 1
+
+    because 104 is h in ASCII and i would indeed actually go down by one, in other words decrement, a value making it equal to g.
